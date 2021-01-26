@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+body {
+  padding: 300px 50px;
+  background: #999;
+}
+
+#banner_wrap {
+  position: relative;
+  width: 600px;
+}
+
+/* 배너 표시 상태 */
+#banner.active {
+  height: 170px;
+  border: 1px solid #ccc;
+}
+
+/* 배너 비표시 상태 */
+#banner {
+  width: 600px;
+  height: 0px;
+  position: relative;
+  overflow: hidden;
+  background: url(./img/bg.jpg);
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+}
+
+#banner:hover {
+  cursor: pointer;
+}
+
+#banner img {
+  display: block;
+  position: absolute;
+}
+
+#sound_btn {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  outline: none;
+}
+
+#toggle {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  background: #666;
+  color: white;
+  font-size: 12px;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+#toggle:hover {
+  text-decoration: underline;
+}
+
+/* size */
+input {
+  width: 20px;
+}
+
+figure > img {
+  width: 40px;
+}
