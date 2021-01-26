@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+
+#list_Container {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  width: 300px;
+}
+
+#title_Container {
+  padding: 20px;
+}
+
+#title {
+  padding: 10px;
+}
+
+#add_Btn {
+  padding: 5px 10px;
+  color: white;
+  background-color: tomato;
+  border: 0;
+  border-radius: 5px;
+}
+
+.remove_Btn {
+  position: absolute;
+  right: -250px;
+}
+
+li {
+  padding: 3px;
+}
+
+.active {
+  background-color: #abc;
+}
