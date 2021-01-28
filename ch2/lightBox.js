@@ -2,7 +2,7 @@ var indicator = document.querySelectorAll('.indicator button')
 var lightbox = document.querySelector("#lightbox");
 var block = document.querySelector('#block');
 
-// 라이 박스 보기
+// 라이트 박스 보기
 function lightboxOpen(num){
     lightbox.setAttribute('class', 'active');
     block.setAttribute('class', 'active'); 
@@ -11,7 +11,7 @@ function lightboxOpen(num){
     indicator[num-1].focus();
 }
 
-// 라이 박스 닫기
+// 라이트 박스 닫기
 function lightboxClose(){
     lightbox.removeAttribute('class');
     block.removeAttribute('class');

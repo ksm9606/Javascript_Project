@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1>light box</h1>
+        <img class="title_img" src="img1.png" alt="" onclick="lightbox_open(1)">
+        <img class="title_img" src="img2.png" alt="" onclick="lightbox_open(2)">
+        <img class="title_img" src="img3.png" alt="" onclick="lightbox_open(3)">
+    </div>
+
+    <div id="block"></div>
+
+    <div id="light_box">
+        <h1 class="title">박물관에서 사라진 아빠를 찾아서</h1>
+        <p class="text">아빠와 함께 떠난 아이는...</p>
+        <figure>
+            <img src="img1.png" alt="" class="active">
+            <img src="img2.png" alt="">
+            <img src="img3.png" alt="">
+        </figure>
+        <div class="indicator">
+            <button onclick="changeImg(this.innerHTML)">1</button> 
+            <button onclick="changeImg(this.innerHTML)">2</button>
+            <button onclick="changeImg(this.innerHTML)">3</button>
+        </div>
+        <div class="close_btn">X</div>
+    </div>
+
+    
+</body>
+</html>

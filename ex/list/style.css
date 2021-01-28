@@ -1,0 +1,31 @@
+#list {
+  border: 1px solid gray;
+  width: 30%;
+}
+
+#list h1 {
+  text-align: center;
+}
+
+#list .btn {
+  text-align: center;
+}
+
+.addBtn {
+  padding: 5px 10px;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+}
+
+.removeBtn {
+  padding: 5px 10px;
+  color: white;
+  background-color: tomato;
+  border: 0;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #abc;
+}
