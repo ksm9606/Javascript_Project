@@ -36,8 +36,8 @@ function calendar(new_year, new_month){
     if(today.getFullYear() === year && today.getMonth() === month){
         for (var date of document.querySelectorAll('tr>td')) {
             if (+date.innerText === today.getDate()) {  // 해당 태그가 가지고 있는 날짜는 문자열이기 때문에 + 단항 연산자를 통해 숫자로 변경
-              date.classList.add('today');
-              break;
+                date.classList.add('today');
+                break;
             }
         }
     }
