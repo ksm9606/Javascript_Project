@@ -1,0 +1,16 @@
+.box {
+  background-color: #f80;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transform: rotateY(-180deg);
+}
+
+.box h1 {
+  width: 200px;
+  background-color: yellow;
+  text-align: center;
+  transform: rotateY(180deg);
+  transition-duration: 1s;
+}
