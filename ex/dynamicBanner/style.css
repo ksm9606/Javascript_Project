@@ -30,9 +30,17 @@
 }
 
 #banner img {
-  width: 30px;
+  width: 50px;
   display: block;
   position: absolute;
+}
+
+#banner img.active {
+  display: block;
+}
+
+#banner img.disable {
+  display: none;
 }
 
 #soundBtn {
@@ -49,7 +57,7 @@ input {
 
 #toggle {
   position: absolute;
-  bottom: -40px;
+  bottom: 3px;
   background: #666;
   color: white;
   font-size: 30px;

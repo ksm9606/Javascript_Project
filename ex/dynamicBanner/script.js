@@ -3,7 +3,9 @@ var banner_height = banner.offsetHeight;
 var toggle = document.getElementById('toggle');
 var img = document.querySelectorAll('img');
 var result = document.querySelector('.result');
+var level = document.querySelector('.level');
 var score = 0;
+var levelUp = 1;
 
 var cast = [];
 
@@ -13,7 +15,7 @@ function set_balloon(num){
     var y = Math.floor(Math.random() * (400 - 120) + 120);
     var size = Math.floor(Math.random() * (200 - 100) + 100);
     var angle = Math.floor(Math.random() * (360 - 0) + 0);
-    var speed = Math.random() * (2 - 0) + 0;
+    var speed = Math.random() * (2 - 2) + 0;
 
     cast[num] = {
         x : x,
@@ -29,6 +31,8 @@ function init_balloon(){
         set_balloon(i);
         img[i].style.left = '-9999px';
         img[i].style.top = '-9999px';
+
+        img[i].setAttribute('class', 'active');
     }
 }
 
@@ -40,10 +44,10 @@ function animation_balloon(){
 
         if(cast[i].y < banner_height){
             cast[i].y += 1+cast[i].speed;
-            cast[i].angle += cast[i].speed;
+            cast[i].angle += 1 - cast[i].speed;
         }else{
             set_balloon(i);
-        }
+        }        
     }
 }
 
@@ -59,20 +63,21 @@ toggle.addEventListener('click', function(){
 
 
 for(var i=0; i<img.length; i++){
-    img[i].addEventListener('click', function(){
+    img[i].addEventListener('click', function(event){
+        click = event.target;
+        click.setAttribute('class', 'disable');
         score += 1;
-        result.innerHTML = '결과 : '+ score;
+        result.innerHTML = '점수 : '+ score;
         if(score == 3){
-            alert('성공');
+            alert('LEVEl UP!! \nSPEED UP!!');
             score = 0;
-            result.innerHTML = '결과 : '+ score;
+            level.innerHTML = 'LEVEL : '+ ++levelUp;
+            result.innerHTML = '점수 : '+ score;
             init_balloon();
             setInterval(function(){
                 animation_balloon();
             }, 10);
         }
     })
-    
-    
 }
 
