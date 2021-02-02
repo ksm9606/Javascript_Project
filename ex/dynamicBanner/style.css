@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+}
+
+#bannerWrap {
+  position: relative;
+  width: 100%;
+}
+
+#banner.active {
+  height: 190px;
+  border: 1px solid #ccc;
+}
+
+#banner {
+  width: 100%;
+  height: 0px;
+  position: relative;
+  overflow: hidden;
+  background: url(img/bg.jpg);
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+  background-size: cover;
+}
+
+#banner img:hover {
+  cursor: pointer;
+}
+
+#banner img {
+  width: 30px;
+  display: block;
+  position: absolute;
+}
+
+#soundBtn {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  outline: none;
+}
+
+input {
+  width: 30px;
+  height: 30px;
+}
+
+#toggle {
+  position: absolute;
+  bottom: -40px;
+  background: #666;
+  color: white;
+  font-size: 30px;
+  padding: 0 5px;
+  text-decoration: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#toggle:hover {
+  text-decoration: underline;
+}
