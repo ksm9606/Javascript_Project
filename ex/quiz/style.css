@@ -1,0 +1,39 @@
+body {
+  font-family: Georgia;
+  font-size: 18px;
+}
+
+#quizWrap {
+  width: 100%;
+  margin: 50px auto;
+  background-color: #ccc;
+
+  box-shadow: 5px 5px 5px #cbcbcb;
+}
+
+#quizWrap h1 {
+  text-align: center;
+}
+
+#question {
+  text-align: center;
+  background-color: chocolate;
+}
+
+.buttons {
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  color: #333;
+  width: 40%;
+  padding: 10px;
+  margin: 10px 10px 10px 20px;
+}
+
+.btn:nth-child(2n) {
+  margin-right: 0;
+  /* width: 50%; */
+}
