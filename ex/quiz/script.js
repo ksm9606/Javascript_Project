@@ -60,7 +60,7 @@ for(var i=0; i<btn.length; i++){
             quiz.quesionIndex++;
             init_quiz();
         }else{
-            alert('결과는 : ' + quiz.score);
+            alert('결과는 : ' + quiz.score );
         }
     })
 }
