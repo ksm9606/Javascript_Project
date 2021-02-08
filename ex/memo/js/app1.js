@@ -76,6 +76,10 @@ $(document).ready(function(){
         }
     };
 
+    // 메모장 생성
+    $('.addBtn').on('click', function(){
+        Sticky.add();
+    });
 
 
     // 메모장 추가
