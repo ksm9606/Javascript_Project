@@ -28,6 +28,9 @@ $(document).ready(function(){
                 top : y
             });
             new_sticky;
+
+            $('.sticky').css('zIndex', '0');	// 메모장 레이어 초기화
+            new_sticky.css('zIndex', '99');	// 새 메모장을 상위 레이어로 	
         },
 
         save : function(text){
