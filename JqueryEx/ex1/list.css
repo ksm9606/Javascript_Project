@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  font-size: 13px;
+  background-color: rgb(187, 187, 187);
+}
+
+#listWrap {
+  width: 300px;
+  margin: 0 auto;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: gray;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.list_wrap .title {
+  text-align: center;
+  font-size: 13px;
+}
+
+.list_wrap .buttons {
+  text-align: center;
+}
+
+.list_wrap .addBtn {
+  background: tomato;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.list_wrap .addBtn,
+.list_wrap .removeBtn {
+  padding: 8px 10px;
+  margin: 0 20px;
+}
+
+.list ul {
+  padding-left: 0;
+}
+
+.list li {
+  list-style: none;
+  padding: 8px 10px;
+  border-bottom: solid 1px gray;
+}
+
+.active {
+  background-color: #abc;
+}
