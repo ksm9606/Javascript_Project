@@ -21,6 +21,7 @@ body {
 
 .list_wrap .buttons {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .list_wrap .addBtn {
@@ -45,6 +46,7 @@ body {
   list-style: none;
   padding: 8px 10px;
   border-bottom: solid 1px gray;
+  font-size: 15px;
 }
 
 .active {

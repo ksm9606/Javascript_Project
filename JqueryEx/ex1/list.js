@@ -42,12 +42,16 @@ $(document).ready(function(){
         remove : function(){
             // active의 text를 가져온다
             var getData =  $('.active').text();
+            var ok = confirm('삭제하시겠습니까?');
+                
             // li에 active class가 있으면
             if($('li').hasClass('active')){
-                $('.active').remove();
-                $('.title').html('삭제 완료');
-                // local 값 삭제
-                localStorage.removeItem(getData);
+                if(ok){
+                    $('.active').remove();
+                    $('.title').html('삭제 완료');
+                     // local 값 삭제
+                    localStorage.removeItem(getData);
+                }
             }
         },
 
