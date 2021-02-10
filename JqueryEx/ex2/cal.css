@@ -1,6 +1,5 @@
 form {
-  margin: 0 auto;
-  width: 320px;
+  width: 100%;
   border: solid 1px gray;
   box-shadow: 5px 5px 5px gray;
 }
@@ -9,9 +8,7 @@ caption {
   font-size: 32px;
   background-color: lightgray;
 }
-table {
-  width: 320px;
-}
+
 table,
 th {
   background: #333;
