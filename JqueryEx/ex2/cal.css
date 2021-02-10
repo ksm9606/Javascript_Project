@@ -1,16 +1,12 @@
-form {
-  width: 100%;
-  border: solid 1px gray;
-  box-shadow: 5px 5px 5px gray;
-}
-
 caption {
   font-size: 32px;
   background-color: lightgray;
+  box-shadow: 5px 0px 5px gray;
 }
 
 table,
 th {
+  box-shadow: 5px 5px 5px gray;
   background: #333;
 }
 th {
