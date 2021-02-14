@@ -1,0 +1,89 @@
+#mainImage {
+  width: 100%;
+  text-align: center;
+}
+
+.mainimg_wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainimg_wrap img {
+  max-width: 45%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.mainimg_wrap img:nth-child(1) {
+  padding-right: 20px;
+}
+
+.mainimg_wrap img:nth-child(3) {
+  padding-right: 20px;
+}
+
+.active {
+  display: block;
+}
+
+#lightBox {
+  width: 90%;
+  background-color: #333;
+  position: absolute;
+  text-align: center;
+  display: none;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+  z-index: 99;
+  color: white;
+}
+
+.lightbox_img img {
+  width: 90%;
+  display: none;
+}
+
+.lightbox_img img.active {
+  display: block;
+  margin: 0 auto;
+}
+
+.indicator {
+  margin: 10px;
+}
+
+.indicator button {
+  margin: 0 5px;
+}
+
+.close_btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 10px;
+  background-color: gray;
+}
+
+.close_btn:hover {
+  background-color: rgb(88, 86, 86);
+}
+
+#block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  opacity: 0.5;
+  z-index: 9;
+  display: none;
+}
+
+#block.active {
+  display: block;
+}
