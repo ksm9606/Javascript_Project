@@ -11,6 +11,7 @@
 
 .mainimg_wrap img {
   max-width: 45%;
+  height: 100px;
   margin: 0 auto;
   padding-bottom: 15px;
 }
