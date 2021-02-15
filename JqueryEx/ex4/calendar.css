@@ -1,0 +1,55 @@
+#calendar {
+  width: 100%;
+}
+
+.calendar_wrap {
+  border: 1px gray solid;
+  margin: 0 auto;
+}
+
+caption {
+  font-size: 1.5em;
+  color: darkorange;
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  color: black;
+  border: 1px solid #666;
+  border-collapse: collapse; /* 선을 단선으로 */
+  table-layout: fixed;
+  text-align: center;
+}
+
+th,
+td {
+  width: 10%;
+  padding: 10px;
+}
+
+tr > th:nth-child(1) {
+  color: red;
+}
+
+tr > th:nth-child(7) {
+  color: blue;
+}
+
+#navi {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#prev,
+#next {
+  text-decoration: none;
+  color: black;
+  padding: 30px 30px;
+}
+
+.today {
+  background-color: orange;
+  font-weight: 600;
+}
