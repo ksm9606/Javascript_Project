@@ -65,26 +65,26 @@ for(var i=0; i<indicator_li.length; i++){
 
 // 터치 이벤트
 // 터치 방향 좌측 벡터
-hammer.on('panleft', function(ev){
+hammer.on('swipeleft', function(ev){
     if(indicator_num < indicator_length){
         page_vector = 1;
     } else page_vector = 0;
 });
 
 // 터치 방향 우측 벡터
-hammer.on('panright', function(ev){
+hammer.on('swiperight', function(ev){
     if(indicator_num > 1){
         page_vector = -1;
     } else page_vector = 0;
 });
 
 // 터치를 떼는 순간
-hammer.on('panend', function(ev){
-    indicator_num += page_vector;				
-    change_page(indicator_num);
-    console.log(ev.type +" gesture detected.");	
-    console.log('next= '+ indicator_num);
-});
+// hammer.on('panend', function(ev){
+//     indicator_num += page_vector;				
+//     change_page(indicator_num);
+//     console.log(ev.type +" gesture detected.");	
+//     console.log('next= '+ indicator_num);
+// });
 
 // 문서 크기가 변경되면 초기화
 window.onresize = function(){
