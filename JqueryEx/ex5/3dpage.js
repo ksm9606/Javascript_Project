@@ -79,12 +79,12 @@ hammer.on('swiperight', function(ev){
 });
 
 // 터치를 떼는 순간
-// hammer.on('panend', function(ev){
-//     indicator_num += page_vector;				
-//     change_page(indicator_num);
-//     console.log(ev.type +" gesture detected.");	
-//     console.log('next= '+ indicator_num);
-// });
+hammer.on('panend', function(ev){
+    indicator_num += page_vector;				
+    change_page(indicator_num);
+    console.log(ev.type +" gesture detected.");	
+    console.log('next= '+ indicator_num);
+});
 
 // 문서 크기가 변경되면 초기화
 window.onresize = function(){
