@@ -1,4 +1,5 @@
 var $page = $('.page'),
+    wrapper = document.querySelector('.wrapper'),
     indicator_li = document.querySelectorAll('li');
 
 var yDeg = 0,
@@ -6,7 +7,10 @@ var yDeg = 0,
     indicator_length = $page.length,
     w = $page[0].offsetWidth,
     page_angle = 0;
+    page_vector = 0;
 
+
+var hammer = new Hammer(wrapper);    
 
 // 페이지 초기화
 function init_page(){
@@ -58,3 +62,37 @@ for(var i=0; i<indicator_li.length; i++){
         change_page(indicator_num);
     })
 }
+
+// 터치 이벤트
+// 터치 방향 좌측 벡터
+hammer.on('panleft', function(ev){
+    if(indicator_num < indicator_length){
+        page_vector = 1;
+    } else page_vector = 0;
+});
+
+// 터치 방향 우측 벡터
+hammer.on('panright', function(ev){
+    if(indicator_num > 1){
+        page_vector = -1;
+    } else page_vector = 0;
+});
+
+// 터치를 떼는 순간
+hammer.on('panend', function(ev){
+    indicator_num += page_vector;				
+    change_page(indicator_num);
+    console.log(ev.type +" gesture detected.");	
+    console.log('next= '+ indicator_num);
+});
+
+// 문서 크기가 변경되면 초기화
+window.onresize = function(){
+    init_page();	
+}
+
+
+// 홈 버튼 클릭 시 홈으로 이동
+$('.icons li > a[href="#"]').click(function(){
+    change_page(1);
+})

@@ -104,6 +104,16 @@ header h1 {
   margin: 0;
 }
 
+ul.icons > li > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 10pt;
+}
+
 ul.icons > li:hover {
   opacity: 0.5;
 }
