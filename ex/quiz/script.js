@@ -35,7 +35,7 @@ function init_quiz(){
 
 // 정답 체크
 function check(answer){
-    var answer = quiz.quesions[quiz.quesionIndex].answer;;
+    var answer = quiz.quesions[quiz.quesionIndex].answer;
     return answer;
 }
 
