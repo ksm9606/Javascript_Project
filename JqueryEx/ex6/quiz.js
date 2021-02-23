@@ -123,6 +123,7 @@ $('.btn1').click(function(event){
     if(quiz1.questionIndex < quiz1.question1.length-1){
         quiz1.questionIndex++;
         init_quiz();
+        $(this).css('backgroundColor', 'rgb(239, 239, 239)');
         progress()+1;
     }else{
         result1();
@@ -142,10 +143,12 @@ $('.btn2').click(function(event){
     if(quiz2.questionIndex < quiz2.question2.length-1){
         quiz2.questionIndex++;
         init_quiz();
+        $(this).css('backgroundColor', 'rgb(239, 239, 239)');
         progress()+1;
     }else{
         result2();
     }
+    
 })
 
 $('.btn3').click(function(event){
@@ -161,10 +164,12 @@ $('.btn3').click(function(event){
     if(quiz3.questionIndex < quiz3.question3.length-1){
         quiz3.questionIndex++;
         init_quiz();
+        $(this).css('backgroundColor', 'rgb(239, 239, 239)');
         progress()+1;
     }else{
         result3();
     }
+
 })
 
 // 동적 추가 된 버튼에 바인딩하여 새로고침
