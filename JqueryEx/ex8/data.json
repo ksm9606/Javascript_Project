@@ -1,0 +1,44 @@
+{
+    "coord": {
+      "lon": 128.6402609,
+      "lat": 35.2538433
+    },
+    "weather": [
+      {
+        "id": 721,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 286.14,
+      "temp_min": 260.15,
+      "temp_max": 313.15,
+      "pressure": 1022,
+      "humidity": 17
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.1,
+      "deg": 350,
+      "gust": 5.7
+    },
+    "clouds": {
+      "all": 1
+    },
+    "dt": 1523768400,
+    "sys": {
+      "type": 1,
+      "id": 7676,
+      "message": 0.0119,
+      "country": "KR",
+      "sunrise": 1479766767,
+      "sunset": 1479802610
+    },
+    "timezone": -25200,
+    "id": 1835848,
+    "name": "Changwon",
+    "cod": 200
+}
