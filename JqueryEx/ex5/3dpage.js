@@ -65,14 +65,14 @@ for(var i=0; i<indicator_li.length; i++){
 
 // 터치 이벤트
 // 터치 방향 좌측 벡터
-hammer.on('swipeleft', function(ev){
+hammer.on('swipeleft', function(){
     if(indicator_num < indicator_length){
         page_vector = 1;
     } else page_vector = 0;
 });
 
 // 터치 방향 우측 벡터
-hammer.on('swiperight', function(ev){
+hammer.on('swiperight', function(){
     if(indicator_num > 1){
         page_vector = -1;
     } else page_vector = 0;
