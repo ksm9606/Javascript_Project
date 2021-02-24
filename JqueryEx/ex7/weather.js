@@ -1,4 +1,4 @@
-var url = 'http://api.openweathermap.org/data/2.5/weather?q=changwon&appid=ac47ea5692c1498d6815daf668a7ed8c';
+var url = 'https://api.openweathermap.org/data/2.5/weather?q=changwon&appid=ac47ea5692c1498d6815daf668a7ed8c';
 
 $.getJSON(url, function(data){
 
@@ -20,7 +20,7 @@ $.getJSON(url, function(data){
     $('.w_id').append(city + '<br>');
 
     // 날씨 아이콘
-    var icon_url = 'http://openweathermap.org/img/w/' + icon;
+    var icon_url = 'https://openweathermap.org/img/w/' + icon;
     $('.icon').append("<img src='" + icon_url + ".png'>" + '<br>');
 
     // 현재온도
@@ -36,4 +36,4 @@ function reload(){
 
 setInterval(() => {
     reload();
-}, 10000);
+}, 15000);
