@@ -23,7 +23,7 @@ body {
 h1 {
   background: #666;
   padding: 10px;
-  font-size: 1.8em;
+  font-size: 0.7em;
   text-align: center;
   opacity: 0.8;
 }
@@ -36,28 +36,53 @@ section {
 section > .w_id {
   text-align: left;
   padding-left: 20px;
-  font-size: 2rem;
+  font-size: 20px;
+}
+
+#time {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 25px;
 }
 
 img {
   width: 100px;
 }
 
-.wrap1 {
+#wrap1 {
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
+  border-bottom: solid gray 1px;
+  text-align: left;
 }
 
-.wrap1 > .temp {
-  font-size: 20px;
+#wrap1 > .temp {
+  font-size: 24px;
   display: flex;
   align-items: center;
   padding-left: 5%;
 }
 
-aside {
+.aside {
   overflow: hidden;
   text-align: center;
+  text-align: left;
+}
+
+.temp_max,
+.temp_min,
+.temp_max2,
+.temp_min2 {
+  font-size: 13px;
+}
+
+#wrap2 {
+  padding-top: 10px;
+}
+
+.description {
+  display: flex;
 }
 
 /* 로딩이미지 */
